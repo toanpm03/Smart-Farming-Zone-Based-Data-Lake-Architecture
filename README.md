@@ -13,12 +13,16 @@ The project follows nine steps:
 - Handle both real time stream processing for operational adjustments on the spot and batch processing approach
 
 - Utilized data through a variety of advanced analytical techniques and operational processes that significantly enhance agricultural efficiency
-#### Step 2: Design Data Flow
-Use the hybrid processing architecture BRAID
-- Utilized data through a variety of advanced analytical techniques and operational processes that significantly enhance agricultural efficiency
+#### Step 2: Design Data Flow 
 
-- 
-Step 3: Design Data Organization
+![image](https://github.com/toanpm03/Smart-Farming-Zone-Based-Data-Lake-Architecture/assets/131639954/d0a1a717-fd79-4279-9e82-b6fbd3e5e34c)
+
+We decided to use the hybrid processing architecture BRAID as the data flow concept for some reasons:
+
+- Data ingested as a stream are both forwarded to a persistent storage and to a stream processing engine. It allows to use results from batch processing in stream processing
+
+- Results can be stored persistently and are available for later use. Data ingested in batches are stored in the persistent storage and processed in batches.
+#### Step 3: Design Data Organization
 
 Step 4: Design Data Storage
 
