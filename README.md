@@ -41,5 +41,8 @@ While data in the Landing Zone and Raw Zone are kept in their original format, D
 Metadata may be structured or semi-structured and are ingested in the same way as the data it belongs to (e.g., as data stream for streaming data). The data flow concept
 for metadata thus is the same as for normal data. The data organization is unsegmented for metadata, as they span across the zones. For data storage, we decided to manage metadata in a graph database to support their highly connected structure (e.g., lineage metadata is connected to data sources, operations, and resulting data). As infrastructure, we decided on Neo4J13. The metadata are modeled using HANDLE, which can represent, but is not limited to, lineage metadata, zone affiliations, and access information. This way, data security & privacy and data quality metadata can be stored, too
 #### Step 8: Design Data Processes
+- Data management throughout its lifecycle includes creation, storage, usage, enhancement, and disposal, with metadata such as lineage and access details captured at each step. Although detailed discussion is limited, key measures like access control and change management ensure compliance with data security, privacy, and quality standards.
 
+- Data Pipelining Processes: Data transition through different zones within the data architecture involves ingestion and buffering in the Landing Zone, followed by ETL processes that move and transform data to fit designated zones (Raw, Harmonized, etc.).
 #### Step 9: Design Metadata as a Feature
+In the scenario, we use three concepts that provide features in addition to those of metadata as enabler, namely a data catalog to allow access of data.
