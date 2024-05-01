@@ -6,12 +6,21 @@ offer multiple advantages for decision making and enabling prediction use cases.
 different big data technologies and their use.
 ### Methodology
 The project follows nine steps:
+
 Step 1: Identify Scenerio
+
 Step 2: Design Data Flow
+
 Step 3: Design Data Organization
+
 Step 4: Design Data Storage
+
 Step 5: Design Infrastructure
+
 Step 6: Design Data Modeling
+
 Step 7: Design Metadata as Enabler
+
 Step 8: Design Data Processes
+
 Step 9: Design Metadata as a Feature
