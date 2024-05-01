@@ -16,7 +16,9 @@ The project follows nine steps:
 #### Step 2: Design Data Flow 
 
 ![image](https://github.com/toanpm03/Smart-Farming-Zone-Based-Data-Lake-Architecture/assets/131639954/d0a1a717-fd79-4279-9e82-b6fbd3e5e34c)
+
 Fig 1. Data Flow and Data Organization (Giebler, 2021)
+
 We decided to use the hybrid processing architecture BRAID as the data flow concept for some reasons:
 
 - Data ingested as a stream are both forwarded to a persistent storage and to a stream processing engine. It allows to use results from batch processing in stream processing
