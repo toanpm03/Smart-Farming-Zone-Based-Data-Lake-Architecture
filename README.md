@@ -14,8 +14,10 @@ The project follows nine steps:
 
 - Utilized data through a variety of advanced analytical techniques and operational processes that significantly enhance agricultural efficiency
 #### Step 2: Design Data Flow
+Use the hybrid processing architecture BRAID
+- Utilized data through a variety of advanced analytical techniques and operational processes that significantly enhance agricultural efficiency
 
-
+- 
 Step 3: Design Data Organization
 
 Step 4: Design Data Storage
