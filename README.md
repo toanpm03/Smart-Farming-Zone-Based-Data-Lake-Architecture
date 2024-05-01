@@ -8,7 +8,6 @@ different big data technologies and their use.
 The project follows nine steps:
 
 Step 1: Identify Scenario
-![image](https://github.com/toanpm03/Smart-Farming-Zone-Based-Data-Lake-Architecture/assets/131639954/27f57497-a45d-4705-be4b-86d58fe2f1d0)
 
 Step 2: Design Data Flow
 
