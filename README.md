@@ -30,11 +30,11 @@ We decided to use the hybrid processing architecture BRAID as the data flow conc
 
 Fig 2. The decision process for choosing an appropriate data organization concept (Giebler et al., 2021)
 
-We decided to use a data zone architecture as specified in Fig. 2  and zone reference model (Giebler et al., 2020) as it provides fitting zones for the envisioned use cases for both batch and stream processing. It also contains concepts for both data quality and data security, e.g., the protected part, or varying access rights for different zones.
+We decided to use a data zone architecture as specified in Fig. 2  and zone reference model (Giebler et al., 2020) as it provides fitting zones for the envisioned use cases for both batch and stream processing (Fig. 1). It also contains concepts for both data quality and data security, e.g., the protected part, or varying access rights for different zones.
+#### Step 4: Design Data Storage
 
-Step 4: Design Data Storage
-
-Step 5: Design Infrastructure
+The data storage concept for this data lake comprises multiple different storage systems (e.g., sensor data are stored in time series databases that support effective time-oriented queries while unstructured data are stored in a distributed file system).
+#### Step 5: Design Infrastructure
 
 Step 6: Design Data Modeling
 
