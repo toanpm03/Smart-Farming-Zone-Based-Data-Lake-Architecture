@@ -46,3 +46,7 @@ for metadata thus is the same as for normal data. The data organization is unseg
 - Data Pipelining Processes: Data transition through different zones within the data architecture involves ingestion and buffering in the Landing Zone, followed by ETL processes that move and transform data to fit designated zones (Raw, Harmonized, etc.).
 #### Step 9: Design Metadata as a Feature
 In the scenario, we use three concepts that provide features in addition to those of metadata as enabler, namely a data catalog to allow access of data.
+
+### Proposed Model
+![image](https://github.com/toanpm03/Smart-Farming-Zone-Based-Data-Lake-Architecture/assets/131639954/2b7efb16-6071-46d7-b027-9f897b2b4482)
+Fig 3. Technical Architecture
