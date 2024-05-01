@@ -7,7 +7,7 @@ different big data technologies and their use.
 ### Methodology
 The project follows nine steps:
 
-Step 1: Identify Scenerio
+Step 1: Identify Scenario
 
 Step 2: Design Data Flow
 
