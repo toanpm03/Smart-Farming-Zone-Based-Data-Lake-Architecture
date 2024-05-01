@@ -6,9 +6,9 @@ offer multiple advantages for decision making and enabling prediction use cases.
 different big data technologies and their use.
 ### Methodology
 The project follows nine steps:
-
+#### Step 1: Identify Scenario
 Step 1: Identify Scenario
--
+
 Step 2: Design Data Flow
 
 Step 3: Design Data Organization
