@@ -32,14 +32,14 @@ Fig 2. The decision process for choosing an appropriate data organization concep
 
 We decided to use a data zone architecture as specified in Fig. 2  and zone reference model (Giebler et al., 2020) as it provides fitting zones for the envisioned use cases for both batch and stream processing (Fig. 1). It also contains concepts for both data quality and data security, e.g., the protected part, or varying access rights for different zones.
 #### Step 4: Design Data Storage
-
 The data storage concept for this data lake comprises multiple different storage systems (e.g., sensor data are stored in time series databases that support effective time-oriented queries while unstructured data are stored in a distributed file system).
 #### Step 5: Design Infrastructure
 We chose various tools for storage and processing from the Hadoop ecosystem, e.g., HDFS and Apache Spark. Other systems, RDBMS and NoSQL databases alike, are added to this core to support more data characteristics. This infrastructure concept is depicted in Fig. 3
-Step 6: Design Data Modeling
+#### Step 6: Design Data Modeling
+While data in the Landing Zone and Raw Zone are kept in their original format, Data Vault is used for structured data in the Harmonized Zone and the Distilled Zone. Data Vault allows flexible, use-case independent, and scalable modeling of data in data lakes. In addition, link-based integration is used to link structured and semi-structured data to unstructured data. The Harmonized Zone uses Raw Vault, while the Distilled Zone is modeled in Business Vault to include business logic. Finally, data in the Delivery Zone and the Explorative Zone are modeled according to specific needs
+#### Step 7: Design Metadata as Enabler
+Metadata may be structured or semi-structured and are ingested in the same way as the data it belongs to (e.g., as data stream for streaming data). The data flow concept
+for metadata thus is the same as for normal data. The data organization is unsegmented for metadata, as they span across the zones. For data storage, we decided to manage metadata in a graph database to support their highly connected structure (e.g., lineage metadata is connected to data sources, operations, and resulting data). As infrastructure, we decided on Neo4J13. The metadata are modeled using HANDLE, which can represent, but is not limited to, lineage metadata, zone affiliations, and access information. This way, data security & privacy and data quality metadata can be stored, too
+#### Step 8: Design Data Processes
 
-Step 7: Design Metadata as Enabler
-
-Step 8: Design Data Processes
-
-Step 9: Design Metadata as a Feature
+#### Step 9: Design Metadata as a Feature
