@@ -1,0 +1,1 @@
+# Smart-Farming-Zone-Based-Data-Lake-Architecture---Journal-Draft
