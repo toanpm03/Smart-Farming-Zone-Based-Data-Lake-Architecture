@@ -35,7 +35,7 @@ We decided to use a data zone architecture as specified in Fig. 2  and zone refe
 
 The data storage concept for this data lake comprises multiple different storage systems (e.g., sensor data are stored in time series databases that support effective time-oriented queries while unstructured data are stored in a distributed file system).
 #### Step 5: Design Infrastructure
-
+We chose various tools for storage and processing from the Hadoop ecosystem, e.g., HDFS and Apache Spark. Other systems, RDBMS and NoSQL databases alike, are added to this core to support more data characteristics. This infrastructure concept is depicted in Fig. 3
 Step 6: Design Data Modeling
 
 Step 7: Design Metadata as Enabler
