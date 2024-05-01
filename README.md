@@ -17,14 +17,20 @@ The project follows nine steps:
 
 ![image](https://github.com/toanpm03/Smart-Farming-Zone-Based-Data-Lake-Architecture/assets/131639954/d0a1a717-fd79-4279-9e82-b6fbd3e5e34c)
 
-Fig 1. Data Flow and Data Organization (Giebler, 2021)
+Fig 1. A Zone Reference Model and its Data Flow (Giebler et al., 2021)
 
 We decided to use the hybrid processing architecture BRAID as the data flow concept for some reasons:
 
 - Data ingested as a stream are both forwarded to a persistent storage and to a stream processing engine. It allows to use results from batch processing in stream processing
 
-- Results can be stored persistently and are available for later use. Data ingested in batches are stored in the persistent storage and processed in batches.
+- Results can be stored persistently and are available for later use. Data ingested in batches are stored in the persistent storage and processed in batches
 #### Step 3: Design Data Organization
+
+![image](https://github.com/toanpm03/Smart-Farming-Zone-Based-Data-Lake-Architecture/assets/131639954/af8fea29-e42e-4094-ad36-aa5bbc1b953e)
+
+Fig 2. The decision process for choosing an appropriate data organization concept (Giebler et al., 2021)
+
+We decided to use a data zone architecture as specified in Fig. 2  and zone reference model (Giebler et al., 2020) as it provides fitting zones for the envisioned use cases for both batch and stream processing. It also contains concepts for both data quality and data security, e.g., the protected part, or varying access rights for different zones.
 
 Step 4: Design Data Storage
 
