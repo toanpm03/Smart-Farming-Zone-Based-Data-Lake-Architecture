@@ -1,1 +1,1 @@
-# Smart-Farming-Zone-Based-Data-Lake-Architecture---Journal-Draft
+# Smart Farming: Zone-based Data Lake Architecture - Journal Draft
