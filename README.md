@@ -8,12 +8,13 @@ different big data technologies and their use.
 The project follows nine steps:
 #### Step 1: Identify Scenario
 
-- Diverse in structure (e.g., structured crop management systems data, semi-structured sensor data, and unstructured images from drones and satellites)
+- Diverse in structure (e.g., structured crop management systems data, semi-structured sensor data, and unstructured images from satellites)
 
 - Handle both real time stream processing for operational adjustments on the spot and batch processing approach
 
 - Utilized data through a variety of advanced analytical techniques and operational processes that significantly enhance agricultural efficiency
-Step 2: Design Data Flow
+#### Step 2: Design Data Flow
+
 
 Step 3: Design Data Organization
 
