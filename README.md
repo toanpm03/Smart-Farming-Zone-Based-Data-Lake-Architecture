@@ -50,5 +50,5 @@ Metadata may be structured or semi-structured and are ingested in the same way a
 In the scenario, we use three concepts that provide features in addition to those of metadata as enabler, namely a data catalog to allow access of data.
 
 ### Proposed Model
-![image](https://github.com/toanpm03/Smart-Farming-Zone-Based-Data-Lake-Architecture/assets/131639954/2b7efb16-6071-46d7-b027-9f897b2b4482)
+![image](https://github.com/toanpm03/Smart-Farming-Zone-Based-Data-Lake-Architecture/assets/131639954/dfec0c8a-8d28-4e3d-98f9-2ef437c7642a)
 Fig 3. Technical Architecture
