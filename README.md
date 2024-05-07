@@ -38,12 +38,14 @@ We chose various tools for storage and processing from the Hadoop ecosystem, e.g
 #### Step 6: Design Data Modeling
 While data in the Landing Zone and Raw Zone are kept in their original format, Data Vault is used for structured data in the Harmonized Zone and the Distilled Zone. Data Vault allows flexible, use-case independent, and scalable modeling of data in data lakes. In addition, link-based integration is used to link structured and semi-structured data to unstructured data. The Harmonized Zone uses Raw Vault, while the Distilled Zone is modeled in Business Vault to include business logic. Finally, data in the Delivery Zone and the Explorative Zone are modeled according to specific needs
 #### Step 7: Design Metadata as Enabler
-Metadata may be structured or semi-structured and are ingested in the same way as the data it belongs to (e.g., as data stream for streaming data). The data flow concept
-for metadata thus is the same as for normal data. The data organization is unsegmented for metadata, as they span across the zones. For data storage, we decided to manage metadata in a graph database to support their highly connected structure (e.g., lineage metadata is connected to data sources, operations, and resulting data). As infrastructure, we decided on Neo4J13. The metadata are modeled using HANDLE, which can represent, but is not limited to, lineage metadata, zone affiliations, and access information. This way, data security & privacy and data quality metadata can be stored, too
-#### Step 8: Design Data Processes
-- Data management throughout its lifecycle includes creation, storage, usage, enhancement, and disposal, with metadata such as lineage and access details captured at each step. Although detailed discussion is limited, key measures like access control and change management ensure compliance with data security, privacy, and quality standards.
+Metadata may be structured or semi-structured and are ingested in the same way as the data it belongs to (e.g., as data stream for streaming data). The data flow concept remains the same for both metadata and data. In terms of data organization, metadata remain continuous and run through all the data lake zones. Because of highly connected metadata, it is stored using Neo4J, a graph database management system. The metadata are modeled using Apache Atlas. Apache Atlas is well integrated into the other components of the Hadoop ecosystem that extract and govern metadata systematically across the data lake.
 
-- Data Pipelining Processes: Data transition through different zones within the data architecture involves ingestion and buffering in the Landing Zone, followed by ETL processes that move and transform data to fit designated zones (Raw, Harmonized, etc.).
+#### Step 8: Design Data Processes
+- Data lifecycle processes involved the data cycle from creation, storage, enhancement and disposal. During each stage of its lifecycle, the metadata that is relevant is captured and stored together with the data. 
+
+- Data pipelining processes begin from the bulk ingestion of raw data into the Landing Zone that serves as the temporary storage for the data before further processing. ETL processes are executed to transfer the data from the Landing Zone to other zones.
+
+- The concepts of data security, privacy, and quality are effectively applied in data lifecycle processing (e.g. access control and change management) and data pipelining processes (e.g. anonymization techniques).
 #### Step 9: Design Metadata as a Feature
 In the scenario, we use three concepts that provide features in addition to those of metadata as enabler, namely a data catalog to allow access of data.
 
